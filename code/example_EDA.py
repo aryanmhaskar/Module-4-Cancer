@@ -42,7 +42,20 @@ BRCA_data = data[cancer_samples]
 # %%
 # Subset by index (genes)
 ####################################################
-desired_gene_list = ['TP53', 'BRCA1', 'BRCA2', 'EGFR', 'MYC']
+desired_gene_list = [
+    "CXCR4", "CXCL13", "FLT4", "RHOA", "TGFB2", "GAB1", "STAT3", "LCK", "FZD4", "PDPK1",
+    "CDH5", "HIF1A", "MTOR", "CXCL12", "ITGA5", "PLCG1", "RRAS", "ENG", "TNFSF12", "PTPN11",
+    "TGFBR1", "TERT", "PIK3CD", "PTK2B", "LEP", "FGF2", "NOS3", "VTN", "CCL24", "SMO",
+    "KDR", "PRKCG", "RAF1", "VEGFA", "BRCA1", "CCL2", "TGFBR2", "EGFR", "VAV2", "VEGFB",
+    "KRAS", "IL6", "ERBB2", "PRKCA", "ROCK1", "TNF", "IL1B", "SDC4", "PRKACA", "CX3CR1",
+    "ITGB1", "PDGFA", "CD40", "MAPK1", "CXCL8", "PIK3R1", "FIGF", "CSF3", "HGF", "VEGFD",
+    "IL10", "MET", "TP53", "SDC2", "TGFB1", "AKT1", "FLT1", "CAV1", "ARNT", "ARHGEF1",
+    "PDGFRA", "HSPB1", "TWIST1", "ITGB3", "AKT3", "MMP1", "MAPK3", "SPHK1", "EPAS1", "TIMP3",
+    "CXCR2", "SRC", "CXCL10", "MAP2K1", "WNT5A", "EFNA1", "IGF1", "IL8", "ROCK2", "ACKR3",
+    "GATA2", "VEGFC", "CCR3", "CTNNB1", "TEK", "FN1", "EPHA2", "IGF1R", "THBS1", "FES",
+    "ITGAV", "CXCL9", "CCL11", "MYC", "CXCR3", "PRKCB", "ACVRL1", "HRAS", "ESR1", "TGFB3",
+    "PLAUR", "RAC1", "NF1", "ANGPT2", "GRB2", "PIK3CA", "IL1A"
+]
 gene_list = [gene for gene in desired_gene_list if gene in BRCA_data.index]
 for gene in desired_gene_list:
     if gene not in gene_list:
