@@ -3,3 +3,6 @@ data/TRAINING_SET_GSE62944_subsample_log2TPM.csv
 data/VALIDATION_SET_GSE62944_subsample_log2TPM.csv
 .claude
 .gitignore
+data/TEST_SET_GSE62944_metadata.csv
+_inject_steps.py
+_smoke_test.py
